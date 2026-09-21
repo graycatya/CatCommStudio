@@ -1,0 +1,20 @@
+
+# <type>(<scope>)[!]: <简短说明>
+# 在第一行填写标题，建议不超过 72 个字符。
+# 类型：feat fix docs style refactor perf test build ci chore revert
+# 范围示例：planning workflow core serial ble tcp udp usb hid ui session
+# 正文填写实际内容，移除不适用的占位提示。
+
+背景：
+<需要解决的问题或变更目的>
+
+变更：
+- <具体修改与最终行为>
+
+验证：
+- <实际执行的检查及结果；相关检查未执行时说明原因>
+
+# 可选脚注，使用时删除前面的注释符：
+# Refs: #123
+# Closes: #123
+# BREAKING CHANGE: <兼容性影响与迁移方式>
