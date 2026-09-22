@@ -1,6 +1,6 @@
 # SimpleCommKit 与 CatCommStudio 功能映射
 
-日期：2026-09-21。状态：需求设计依据，UI 建议尚待确认。
+日期：2026-09-22。状态：需求设计依据，UI 建议尚待确认；本次补充已确认的多进程方向，通信接口核对版本保持不变。
 
 用户已确认通信核心库实现。本文依据 [SimpleCommKit 提交 fc13bff](https://github.com/graycatya/SimpleCommKit/tree/fc13bff9c71c911b18579afe95a8f71a5cbf1c32) 的公开头文件、部分实现和构建配置核对接口范围，未进行编译、设备实测或完整代码审计。
 
@@ -27,11 +27,16 @@
 
 ## 3. CatCommStudio 上层职责建议
 
+已确认主进程创建或打开通信功能子进程。下表为在此方向上的职责建议，进程与会话、窗口的对应关系仍待确认。SimpleScriptEngine、SimpleProcessInfo 的能力依据与边界见[多进程架构与基础库职责](multiprocess-architecture.md)。
+
 | 层次 | 主要职责 |
 | --- | --- |
-| 通信核心：SimpleCommKit | 提供设备发现、连接/监听、收发、错误及相应模块支持的插拔、TLS、重连能力 |
-| 应用层：CatCommStudio | 管理会话与配置、指令历史和分组、发送任务、日志、解析结果；将核心库回调转交到适当线程 |
-| UI 层：CatCommStudio | 提供会话导航、连接配置、收发视图、状态反馈，以及 BLE、USB、HID、MQTT 等专用操作面板 |
+| 主进程：CatCommStudio | 提供功能入口，创建或打开功能子进程；建议补充实例管理、进程状态与资源占用展示 |
+| 功能子进程：CatCommStudio | 管理所属会话与配置、指令历史和分组、发送任务、日志、解析结果；处理回调线程转交和资源释放 |
+| 通信核心：SimpleCommKit | 由功能子进程调用，提供设备发现、连接/监听、收发、错误及相应模块支持的插拔、TLS、重连能力 |
+| 脚本基础：SimpleScriptEngine | 为宏与脚本提供执行和函数绑定基础；通信脚本 API、异步等待与停止控制需补充设计 |
+| 进程信息：SimpleProcessInfo | 为主进程提供 PID 查询、子进程发现、存活检查和资源采样；启动、关闭与 IPC 另行实现 |
+| UI 层：CatCommStudio | 复用会话导航、连接配置、收发视图和各类专用面板组件；功能窗口与主界面的组织方式待确认 |
 
 建议复用统一的会话导航、日志查看与数据编辑组件。操作目标按类型明确显示，例如 TCP 客户端 ID、UDP 地址、BLE 特征、USB 端点、HID 设备或 MQTT 主题。
 
@@ -40,9 +45,9 @@
 ## 4. 接下来需要形成的产品产出
 
 1. 首版功能表：明确每个已有模块需要开放的用户操作，以及日志、指令、波形、脚本等上层功能的优先级。
-2. 用户流程：从新建会话、连接配置、选择操作对象到收发与记录，补齐断连和错误处理。
-3. 页面结构与低保真原型：验证共用工作台与专用操作面板如何配合。
-4. 集成验收表：按目标系统和真实设备检查连接、收发、异常反馈、持续运行与配置恢复。
+2. 用户流程：从主进程创建或打开功能子进程，到会话配置、收发与记录，补齐进程退出、断连和错误处理。
+3. 页面结构与低保真原型：验证主进程入口、实例展示与功能界面如何配合。
+4. 集成验收表：按目标系统和真实设备检查进程启动与就绪、连接、收发、异常反馈、持续运行与配置恢复。
 
 [serial]: https://github.com/graycatya/SimpleCommKit/blob/fc13bff9c71c911b18579afe95a8f71a5cbf1c32/src/SimpleCommKitSerialPort/SimpleCommKitSerialPort.h
 [ble]: https://github.com/graycatya/SimpleCommKit/blob/fc13bff9c71c911b18579afe95a8f71a5cbf1c32/src/SimpleCommKitBle/SimpleCommKitBleCentral.h
