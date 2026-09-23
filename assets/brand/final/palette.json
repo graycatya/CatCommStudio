@@ -1,0 +1,52 @@
+{
+  "status": "approved",
+  "approved_on": "2026-09-23",
+  "base_logo": "sand-rounded-rectangle-with-model-head",
+  "base_badge": null,
+  "theme": {
+    "label": "暖沙",
+    "top": "#F0E3C8",
+    "bottom": "#CEAD80",
+    "ink": "#26384B"
+  },
+  "layout": {
+    "viewBox": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "background": [
+      16,
+      16,
+      480,
+      480
+    ],
+    "corner_radius": 104,
+    "head_width_fraction": 0.68,
+    "head_center_y": 0.475
+  },
+  "future_badges": {
+    "status": "reserved_for_future_extensions",
+    "colors": {
+      "top": "#FFD787",
+      "bottom": "#ECAF4D",
+      "rim": "#F7EDD9",
+      "glyph": "#26384B"
+    },
+    "center": [
+      425,
+      425
+    ],
+    "radius": 67,
+    "example_glyphs_approved": false
+  },
+  "svg_head_format": "embedded-png",
+  "sources": {
+    "composition": "catcommstudio.svg",
+    "head_render": "source/catgray-head.png",
+    "head_scene": "source/catgray-head.blend",
+    "badge_template": "templates/badge.svg"
+  },
+  "color_updated_on": "2026-09-23"
+}
