@@ -1,0 +1,129 @@
+{
+  "status": "approved",
+  "approved_on": "2026-09-23",
+  "approved_base_sha256": "a256884bad0b656eb2b95192ae3ebd7cc629e307ccc1d07cb84268e835deab3b",
+  "approved_base": "../final/catcommstudio.svg",
+  "small_sizes": [
+    16,
+    24,
+    32
+  ],
+  "full_sizes": [
+    48,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "theme": {
+    "label": "暖沙",
+    "top": "#F0E3C8",
+    "bottom": "#CEAD80",
+    "ink": "#26384B"
+  },
+  "mqtt_name_confirmed": true,
+  "modules": [
+    {
+      "id": "launcher",
+      "name": "Launcher",
+      "role": "主进程 · 进程管理",
+      "glyph_meaning": "叠放窗口与运行控制",
+      "svg": "launcher/catcommstudio-launcher.svg",
+      "ico": "launcher/catcommstudio-launcher.ico",
+      "compact_svg": "launcher/catcommstudio-launcher-compact.svg",
+      "png": "launcher/png/catcommstudio-launcher-{size}.png"
+    },
+    {
+      "id": "ble",
+      "name": "BLE",
+      "role": "子程序 · 低功耗蓝牙",
+      "glyph_meaning": "蓝牙符号",
+      "svg": "ble/catcommstudio-ble.svg",
+      "ico": "ble/catcommstudio-ble.ico",
+      "compact_svg": "ble/catcommstudio-ble-compact.svg",
+      "png": "ble/png/catcommstudio-ble-{size}.png"
+    },
+    {
+      "id": "usb",
+      "name": "USB",
+      "role": "子程序 · USB 通信",
+      "glyph_meaning": "USB 分支符号",
+      "svg": "usb/catcommstudio-usb.svg",
+      "ico": "usb/catcommstudio-usb.ico",
+      "compact_svg": "usb/catcommstudio-usb-compact.svg",
+      "png": "usb/png/catcommstudio-usb-{size}.png"
+    },
+    {
+      "id": "hid",
+      "name": "HID",
+      "role": "子程序 · 人机接口设备",
+      "glyph_meaning": "键盘轮廓",
+      "svg": "hid/catcommstudio-hid.svg",
+      "ico": "hid/catcommstudio-hid.ico",
+      "compact_svg": "hid/catcommstudio-hid-compact.svg",
+      "png": "hid/png/catcommstudio-hid-{size}.png"
+    },
+    {
+      "id": "tcp",
+      "name": "TCP",
+      "role": "子程序 · TCP 通信",
+      "glyph_meaning": "TCP 协议缩写",
+      "svg": "tcp/catcommstudio-tcp.svg",
+      "ico": "tcp/catcommstudio-tcp.ico",
+      "compact_svg": "tcp/catcommstudio-tcp-compact.svg",
+      "png": "tcp/png/catcommstudio-tcp-{size}.png"
+    },
+    {
+      "id": "udp",
+      "name": "UDP",
+      "role": "子程序 · UDP 通信",
+      "glyph_meaning": "UDP 协议缩写",
+      "svg": "udp/catcommstudio-udp.svg",
+      "ico": "udp/catcommstudio-udp.ico",
+      "compact_svg": "udp/catcommstudio-udp-compact.svg",
+      "png": "udp/png/catcommstudio-udp-{size}.png"
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "role": "子程序 · WebSocket 通信",
+      "glyph_meaning": "WS 协议缩写",
+      "svg": "websocket/catcommstudio-websocket.svg",
+      "ico": "websocket/catcommstudio-websocket.ico",
+      "compact_svg": "websocket/catcommstudio-websocket-compact.svg",
+      "png": "websocket/png/catcommstudio-websocket-{size}.png"
+    },
+    {
+      "id": "serial-port",
+      "name": "Serial Port",
+      "role": "子程序 · 串口通信",
+      "glyph_meaning": "串口接口轮廓",
+      "svg": "serial-port/catcommstudio-serial-port.svg",
+      "ico": "serial-port/catcommstudio-serial-port.ico",
+      "compact_svg": "serial-port/catcommstudio-serial-port-compact.svg",
+      "png": "serial-port/png/catcommstudio-serial-port-{size}.png"
+    },
+    {
+      "id": "mqtt",
+      "name": "MQTT",
+      "role": "子程序 · 发布与订阅",
+      "glyph_meaning": "消息节点与分发连接",
+      "svg": "mqtt/catcommstudio-mqtt.svg",
+      "ico": "mqtt/catcommstudio-mqtt.ico",
+      "compact_svg": "mqtt/catcommstudio-mqtt-compact.svg",
+      "png": "mqtt/png/catcommstudio-mqtt-{size}.png"
+    },
+    {
+      "id": "can",
+      "name": "CAN",
+      "role": "子程序 · CAN 通信",
+      "glyph_meaning": "CAN 协议缩写",
+      "svg": "can/catcommstudio-can.svg",
+      "ico": "can/catcommstudio-can.ico",
+      "compact_svg": "can/catcommstudio-can-compact.svg",
+      "png": "can/png/catcommstudio-can-{size}.png"
+    }
+  ]
+}

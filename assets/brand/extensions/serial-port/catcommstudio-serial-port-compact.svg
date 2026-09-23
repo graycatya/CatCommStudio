@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 160 160">
+<defs><linearGradient id="badge-gold" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#FFD787"/><stop offset="1" stop-color="#ECAF4D"/></linearGradient></defs>
+<circle cx="80" cy="80" r="76" fill="#F7EDD9"/>
+<circle cx="80" cy="80" r="69" fill="url(#badge-gold)"/>
+<g id="badge-glyph" transform="translate(30 30)" color="#26384B"><path d="M17 23H83Q94 23 91 35L82 74Q80 81 72 81H28Q20 81 18 74L9 35Q6 23 17 23Z" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="currentColor"><circle cx="29" cy="43" r="5"/><circle cx="50" cy="43" r="5"/><circle cx="71" cy="43" r="5"/><circle cx="39" cy="64" r="5"/><circle cx="61" cy="64" r="5"/></g></g></svg>
