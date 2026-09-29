@@ -8,6 +8,7 @@
 
 ## 项目资料
 
+- [文档导航与编写模板](docs/README.md)
 - [产品定义](docs/product-definition.md)
 - [通信能力与产品功能映射](docs/communication-capabilities.md)
 - [多进程架构与基础库职责](docs/multiprocess-architecture.md)
