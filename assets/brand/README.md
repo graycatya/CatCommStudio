@@ -13,3 +13,7 @@
 - [十个扩展图标总览](extensions/overview.png)
 
 定版所需的猫头模型、透明渲染图、导出脚本和空白角标模板均在 `final/` 内。`extensions/` 是用户已确认的模块图标；基础定版与扩展分别维护。
+
+## QCatUiKit 专用设计
+
+[QCatUiKit Logo 提案](qcat-uikit/README.md) 沿用 CatGray 灰猫，使用蓝色底座与 UI 组件网格角标。提供完整 SVG、10 种尺寸 PNG、Windows ICO 与[设计总览](qcat-uikit/overview.png)。所有尺寸统一使用完整灰猫与组件角标。用户已选择该设计方向，具体构图仍为待审阅提案。

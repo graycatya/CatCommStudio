@@ -1,0 +1,50 @@
+{
+  "name": "QCatUiKit",
+  "status": "design-proposal",
+  "created_on": "2026-10-11",
+  "intended_project": "QCatUiKit",
+  "palette": {
+    "primary": "#1677FF",
+    "background_top": "#64B5FF",
+    "background_bottom": "#1545BA",
+    "badge_top": "#FFFFFF",
+    "badge_bottom": "#DBEAFF",
+    "badge_rim": "#EDF5FF",
+    "ink": "#18304D",
+    "muted": "#64748B"
+  },
+  "layout": {
+    "viewBox": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "badge": [
+      358,
+      358,
+      140,
+      140
+    ],
+    "badge_radius": 36
+  },
+  "source_base": "../final/catcommstudio.svg",
+  "source_base_sha256": "a256884bad0b656eb2b95192ae3ebd7cc629e307ccc1d07cb84268e835deab3b",
+  "cat_model": "existing CatGray voxel render; geometry, expression, colors and placement preserved",
+  "full_svg": "qcat-uikit.svg",
+  "ico": "qcat-uikit.ico",
+  "png": "png/qcat-uikit-{size}.png",
+  "full_sizes": [
+    16,
+    24,
+    32,
+    48,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "format": "SVG: embedded PNG cat/shadow + vector tile/badge; all sizes use the full composition"
+}
